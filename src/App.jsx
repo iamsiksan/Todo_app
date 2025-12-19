@@ -1,0 +1,20 @@
+import { useState } from 'react'
+import Todos from './components/Todos'
+import AddTodo from './components/AddTodo'
+
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className='flex flex-col items-center justify-center mt-20'>
+
+      <AddTodo />
+      <Todos />
+    </div>
+
+    
+  )
+}
+
+export default App
